@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="{% static 'assets/portifolioA/css/calculadora.css' %}"> -->
+    <script src="{% static 'assets/portifolioA/js/calculadora.js' %}" defer></script>
+    <title>Document</title>
+</head>
+<!-- <style>
+    *{
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+</style> -->
+<body background-image="{% static 'images/calculadora_back.jpg' %}">
+    <div class="container">
+        <div id="icon_home">
+            <a href="{% url 'index' %}"></a>
+        </div>
+        <div id="display" class="calc-display">
+            <p id="id-display" class="display">0</p>
+        </div>
+        <div class="containerTeclas">
+            <div class="calc-teclas">
+                <button id="teclaNum7" class="tecla-number num">7</button>
+                <button id="teclaNum8" class="tecla-number num">8</button>
+                <button id="teclaNum9" class="tecla-number num">9</button>
+                <button id="teclaM" class="tecla-number op">+</button>
+                <button id="teclaNum4" class="tecla-number num">4</button>
+                <button id="teclaNum5" class="tecla-number num">5</button>
+                <button id="teclaNum6" class="tecla-number num">6</button>
+                <br>
+                <button id="teclaNum1" class="tecla-number num">1</button>
+                <button id="teclaNum2" class="tecla-number num">2</button>
+                <button id="teclaNum3" class="tecla-number num">3</button>
+                <button id="teclaLimpar" class="tecla-number op">C</button>
+                <br>
+                <button id="teclaNum0" class="tecla-number num">0</button>
+                <button id="tecla-virg" class="tecla-number op">,
+                </button>
+                <br>
+                <button id="tecla-div" class="tecla-number op">/</button>
+                <button id="tecla-sub" class="tecla-number op">-</button>
+                <button id="tecla-mult" class="tecla-number op">x</button>
+                <button id="teclaIgual" class="tecla-number resultado">=</button>
+            </div>
+        </div>
+        <div id="texto" class="texto">
+            <p class="meuNome">GABRIEL OLIVEIRA</p>
+        </div>
+    </div>
+</body>
+</html>
+
+{% load static %}
